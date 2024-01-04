@@ -1,0 +1,455 @@
+:root{
+    --main-font:'Roboto', sans-serif;
+    --main-padding: 5rem;
+    --main-background:#F5F5F5;
+    --main-color:#0078FF;
+    
+}
+ 
+.navbar .navbar-nav .nav-item{
+    position: relative;
+}
+
+
+.active::after{
+    content: '';
+    width: 79%;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    top:40px ;
+    left: 5px;
+}
+.navbar .navbar-nav .hover::after{
+    content: '';
+    width: 80%;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    top:40px ;
+    left: 5px;
+    opacity: 0;
+    transition: all 1s;
+
+}
+.navbar .navbar-nav .hover:hover::after{
+    opacity: 1;
+
+}
+
+
+
+
+
+/*                                header                                         */
+
+#home{
+    background-image: linear-gradient(#0000004d , #0000004d)  ,url(../imges/hero-bg.jpg) ;
+    background-position: center center;
+    background-size: cover;
+    z-index: 99999;
+}
+
+.caption-text h1{
+    font-size: 5rem;
+    font-weight: 37.5rem;
+    color: white;
+    font-family: var(--main-font);
+}
+
+
+
+.animy::after{
+    content: "";
+    animation-name: typingSkill;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes typingSkill{
+    0%{ content: "|"; }
+
+    2% { content: "D|"; }
+    4% { content: "De|"; }
+    6% { content: "Dev|"; }
+    8% { content: "Deve|"; }
+    10% { content: "Devel|"; }
+    12% { content: "Develo|"; }
+    14% { content: "Develop|"; }
+    16% { content: "Develope|"; }
+    18% { content: "Developer|"; }
+    20% { content: "Develope|"; }
+    22% { content: "Develo|"; }
+    24% { content: "Devel|"; }
+    26% { content: "Deve|"; }
+    28% { content: "Dev|"; }
+    30% { content: "De|"; }
+    32% { content: "Des|"; }
+    34% { content: "Desi|"; }
+    36% { content: "Desg|"; }
+    38% { content: "Design|"; }
+    40% { content: "Designe|"; }
+    42% { content: "Designer|"; }
+    44% { content: "Designer|"; }
+    46% { content: "Designe|"; }
+    48% { content: "Design|"; }
+    50% { content: "Desig|"; }
+    52% { content: "Desi|"; }
+    54% { content: "Des|"; }
+    56% { content: "De|"; }
+    58% { content: "D|"; }
+    60% { content: "|"; }
+    62% { content: "f|"; }
+    64% { content: "fr|"; }
+    68% { content: "fre|"; }
+    70% { content: "free|"; }
+    72% { content: "freel|"; }
+    74% { content: " freela|"; }
+    76% { content: " freelan|"; }
+    78% { content: " freelanc|"; }
+    80% { content: " freelance|"; }
+    82% { content: " freelancer|"; }
+    84% { content: " freelance|"; }
+    86% { content: " freelanc|"; }
+    88% { content: " freelan|"; }
+    90% { content: " freela|"; }
+    92% { content: " freel|"; }
+    94% { content: " fre|"; }
+    96% { content: " fr|"; }
+    98% { content: " f|"; }
+    100% { content: " |"; }
+
+    
+
+    
+
+}
+
+/*                             end header                  */
+/*                             start about                  */
+
+
+#about{
+    background-color: #F5F5F5;
+    padding-block: var(--main-padding);
+}
+
+ #about .container{
+    background-color: white !important;
+}
+ .about-me .title2{
+    position: relative;
+}
+ .about-me .title2 h5::after{
+    content:'' ;
+    width: 25%;
+    height: 2px;
+    background-color: blue;
+    position: absolute;
+    top: 40px;
+    left: 0;
+
+}
+.about-me .title2 h5{
+    font-family: var(--main-font);
+    font-size: 2rem;
+    font-weight: 25rem;
+    padding-bottom: 2.5rem;
+
+}
+ .about-me .text1 p{
+    font-size: 1.25rem;
+    font-family: var(--main-font);
+    color:#4e4e4e93 ;
+    line-height: 1.875rem;
+}
+    
+/*                             start services                  */
+
+#services{
+    padding-block: var(--main-padding);
+    background-color: var(--main-background);
+    position: relative;
+   
+}
+
+ .title3{
+    padding-bottom: 2.5rem;
+   text-align: center;
+}
+.title3::after{
+    content: '';
+    width:4% ;
+    height: .375rem;
+    background-color: #0078FF;
+    position: absolute;
+    top: 11.25rem;
+    left: 48%;
+}
+
+ .title3 h3{
+    font-family: var(--main-font);
+    font-size: 3rem;
+    line-height: 3.625rem;
+    font-weight: bolder;
+    color:#1E1E1E ;
+    
+}
+.title3 p{
+    font-family: var(--main-font);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color:#4e4e4ec6;
+}
+
+#services .items-area .item{
+    padding-block: 30px;
+    border-radius: 1rem ;
+    margin-bottom: 2.5rem;
+}
+
+.icona{
+    width: 5rem;
+    height:5rem ;
+    background-color: white;
+    border-radius: 50%; 
+    outline: 8px solid var(--main-color);
+    outline-offset: .625rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     margin-left: 43%; 
+     margin-block: 1.875rem;
+     transition: all 0.5s;
+
+    
+
+}
+.icona i{
+  font-size: 45px;
+  color: #000;
+  transition: all 0.5s;
+   
+}
+.text2{;
+    
+   
+}
+.text2 h2{
+    font-size: 1.4375rem;
+    font-family:var(--main-font) ;
+    color: #1E1E1E;
+    line-height: 1.625rem;
+    font-weight: 31.25rem;
+    text-align: center;
+}
+.text2 p{
+    font-size: 1rem;
+    font-family:var(--main-font) ;
+    color: #4E4E4E;
+    line-height: 1.5rem;
+    padding-inline: 40px;
+    text-align: center;
+    
+}
+.items-area .item:hover .icona{
+    background-color: #0078FF;
+    outline: 8px solid #CDE1F8;
+}
+.items-area .item:hover i{
+    color: white !important;
+}
+/*                             start clint-info                */
+
+#clint-info{
+    padding-block:var(--main-padding) ;
+    background-image:   linear-gradient(#4c9cf2b1 , #4c9cf2b1),url(../imges/counters-bg.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    height: 400px;
+}
+#clint-info .counters .counter{
+    width: 50px;
+    height: 50px;
+   
+    background-color: transparent;
+
+    /* margin-top:50% ; */
+    border-radius: 50%;
+    outline: 8px solid white;
+    outline-offset: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+#clint-info .counters .counter i{
+    font-size: 30px;
+    color: white;
+}
+
+#clint-info .counters .counter-text p{
+    color: white;
+}
+
+
+
+
+/*                             start work                  */
+
+
+
+#work{
+    padding-block: var(--main-padding);
+    background-color: var(--main-background);
+    position: relative;
+}
+#work .card .skal{
+    transition: all 0.5s;
+}
+#work .info .text3 span{
+    color: #0078FF;
+}
+#work .card .skal:hover{
+    transform: scale(1.1);
+}
+
+/*                             start slider                  */
+
+.slider{
+    padding-block: var(--main-padding);
+    background-image:   linear-gradient(#4c9cf2b1 , #4c9cf2b1),url(../imges/overlay-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 34.375rem;
+  
+}
+.carousel-indicators [data-bs-target]{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.carousel-inner .carousel-item {
+    margin-left: 90px;
+}
+
+.hamada{
+    color: white;
+   
+}
+/*                             start blog                 */
+
+#blog{
+    padding-block: var(--main-padding);
+    background-color: var(--main-background);
+    position: relative;
+
+}
+#blog .item-area .item {
+    position: relative;
+}
+#blog .item-area .item .bottom{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+}
+
+#blog .img-info:hover a{
+    color: red;
+}
+
+/*                             start contact               */
+#contact{
+    padding-block: var(--main-padding);
+    background-image: linear-gradient(#4c9cf2b1 , #4c9cf2b1)  ,url(../imges/overlay-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#contact .title2{
+    position: relative;
+}
+#contact .title2 h5{
+    font-size: 2rem;
+    font-weight: 31.25rem;
+    color: #1E1E1E;
+    font-family: var(--main-font);
+}
+
+#contact  .title2 h5::after{
+    content:'' ;
+    width: 13%;
+    height: 4px;
+    background-color: var(--main-color);
+    position:absolute ;
+    top: 5.625rem;
+    left: 3.125rem; ;
+}
+#contact .form22 .v-5{
+    height: 50px;
+}
+#contact .form22 .v-10{
+    height: 150px;
+}
+.bg-bloue{
+    background-color: var(--main-color);
+}
+#contact .botton button{
+    transition: all 0.5s;
+}
+#contact .botton button:hover{
+    background-color: #3392ffb7;
+}
+#contact .touch p{
+     font-size: 1.25rem;
+    font-family: var(--main-font);
+    color: #4e4e4eaf;
+    line-height: 2rem;
+} 
+#contact .touch .contact-us li{
+    margin-left:-25px;
+}
+
+.iconna{
+    
+        width: 2rem;
+        height:2rem ;
+        background-color: white;
+        border-radius: 50%; 
+        outline: 5px solid var(--main-color);
+        outline-offset: .625rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+         margin-left: 5%; 
+         margin-block: 1.875rem;
+         transition: all 0.5s;
+   
+}
+.iconna i{
+    /* font-size: 45px; */
+    color: #000;
+    transition: all 0.5s;
+     
+  }
+  .iconna:hover{
+    background-color: #0078FF;
+    outline: 8px solid #CDE1F8;
+}
+.iconna:hover i{
+    color: white !important;
+}
+
+
+/*                             start footer              */
+
+#sawsan{
+ background-color: #0062D3;
+box-shadow: 10px;
+}
